@@ -33,6 +33,25 @@ body {
     border-bottom: 2px solid black;
 }
 
+/* styling for bilder.html */
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+}
+
+.picture-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* media query for screens smaller than 1000 px */
+@media (max-width: 1000px) {
+    .picture-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* media query for screens smaller than 600 px */
 @media (max-width: 600px) {
 
@@ -58,7 +77,7 @@ body {
         margin: 1em 1em 1em 2em;
     }
 
-    .navbar-items li a:hover{
+    .navbar-items li a:hover {
         border-bottom: 2px solid black;
     }
 
@@ -107,4 +126,8 @@ body {
         border-bottom: none;
     }
 
+    .picture-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
