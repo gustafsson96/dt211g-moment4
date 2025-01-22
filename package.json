@@ -1,7 +1,7 @@
 {
   "name": "moment1",
   "version": "1.0.0",
-  "source" : "src/index.html",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
   }
 }
