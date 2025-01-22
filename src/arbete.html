@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <script type="module" src="js/app.js"></script>
     <title>Arbetsprocess</title>
 </head>
@@ -30,7 +32,24 @@
     <main>
         <section class="development">
             <h1>Arbetsprocess</h1>
-            <p>Om arbetsprocessen</p>
+            <h2>Utveckling</h2>
+            <p>Denna uppgift har skapats i programmet VS Code och kontinuerligt versionshanterats till
+                GitHub. Arbetet har skett i två branches: main och development. Funktionalitet har inledningsvis skapats
+                i development-branchen och färdiga lösningar har sedan sammanslagits med main-branchen via git merge.
+                <br><br>
+                Ett antal filer har exkluderats från versionshantering via en .gitignore-fil. "node_modules"-katalogen
+                och de optimerade publiceringsfilerna i
+                "dist"-katalogen är två exempel.
+            </p>
+            <h2>Verktyg för automatisering</h2>
+            <p>Uppgiften skapades i NodeJS som ett npm-projekt, inledningsvis med kommandot npm init. För att
+                automatisera delar av utvecklingsarbetet installerades
+                paketet Parcel som en dev dependecy (för att uppfylla krav på möjlighet för återställning via npm
+                install).
+                <br><br>
+            </p>
+            <h2>Publicering</h2>
+            <p>Publiceringsprocess</p>
         </section>
     </main>
     <footer>
