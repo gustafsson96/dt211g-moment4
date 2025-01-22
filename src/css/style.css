@@ -12,7 +12,7 @@ body {
     border: 1px solid red;
 }
 
-.navbar ul {
+.navbar-items {
     display: flex;
     gap: 0 2em;
     list-style: none;
@@ -20,8 +20,72 @@ body {
     padding: 1em;
 }
 
-.navbar ul li a {
+.navbar-items li a {
     display: block;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    color: #000;
+    font-weight: bold;
+}
+
+/* media query for screens smaller than 600 px */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        border: 2px solid red;
+    }
+
+    .navbar-items {
+        display: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: left;
+        border: 2px solid blue;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar-items li a {
+        display: inline-block;
+        padding: 1em;
+        margin-left: 1em;
+    }
+
+    .navbar-items.show {
+        display: flex;
+    }
+
+    /* hamburger icon */
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        margin: 1em 0;
+    }
+
+    .hamburger-icon div {
+        width: 25px;
+        height: 3px;
+        border-radius: 20%;
+        background-color: #000000;
+        transition: transform 0.3s;
+    }
+
+    /* turn the hamburger icon into a cross when active */
+    .hamburger-icon.active div:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-icon.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-icon.active div:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
