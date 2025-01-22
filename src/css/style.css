@@ -1,5 +1,4 @@
 body {
-    background-color: green;
     margin: 0;
     padding: 0;
 }
@@ -9,23 +8,29 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
+    border-bottom: 2px solid black;
+    font-family: "Rubik", 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .navbar-items {
     display: flex;
     gap: 0 2em;
     list-style: none;
-    margin: 0;
-    padding: 1em;
+    margin: 0.5em 0;
+    padding: 1em 0;
+    justify-content: center;
 }
 
 .navbar-items li a {
     display: block;
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #000;
-    font-weight: bold;
+}
+
+.active-item {
+    border-bottom: 2px solid black;
 }
 
 /* media query for screens smaller than 600 px */
@@ -33,7 +38,9 @@ body {
 
     .navbar {
         flex-direction: column;
-        border: 2px solid red;
+        margin: 0.5em 0;
+        padding: 0.5em 0;
+        border-bottom: 2px solid black;
     }
 
     .navbar-items {
@@ -41,22 +48,30 @@ body {
         flex-direction: column;
         margin: 0;
         padding: 0;
-        align-items: left;
-        border: 2px solid blue;
         width: 100%;
         background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     .navbar-items li a {
         display: inline-block;
-        padding: 1em;
-        margin-left: 1em;
+        margin: 1em 1em 1em 2em;
+    }
+
+    .navbar-items li a:hover{
+        border-bottom: 2px solid black;
     }
 
     .navbar-items.show {
         display: flex;
+        border: 2px solid black;
+        align-items: left;
     }
+
+    .navbar.show {
+        border-bottom: none;
+    }
+
 
     /* hamburger icon */
     .hamburger-icon {
@@ -64,7 +79,7 @@ body {
         flex-direction: column;
         gap: 5px;
         cursor: pointer;
-        margin: 1em 0;
+        margin: 0.5em 0 1em 0;
     }
 
     .hamburger-icon div {
@@ -86,6 +101,10 @@ body {
 
     .hamburger-icon.active div:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .active-item {
+        border-bottom: none;
     }
 
 }
