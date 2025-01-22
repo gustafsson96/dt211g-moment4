@@ -64,6 +64,13 @@ body {
     height: auto;
 }
 
+/* media query for screens larger than 1600px */
+@media (min-width: 1600px) {
+    .about {
+        max-width: 1000px;
+    }
+}
+
 /* media query for screens smaller than 1000 px */
 @media (max-width: 1000px) {
 
