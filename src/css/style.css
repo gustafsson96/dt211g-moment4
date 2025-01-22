@@ -77,7 +77,7 @@ footer p {
 }
 
 .development h2 {
-   line-height: 0;
+   line-height: 0.5;
 }
 
 .about p,
@@ -86,7 +86,7 @@ footer p {
 .development ul {
     font-size: 1.1em;
     line-height: 1.7;
-    margin-bottom: 1.8em;
+    margin-bottom: 2.2em;
     
 }
 
@@ -204,9 +204,10 @@ footer p {
     .about,
     .development {
         max-width: 100%;
-        width: 100%;
+        width: 97%;
         border-radius: 0;
-        margin-top: 0em;
+        margin: 0 auto;
+        padding: 0.5em;
     }
 
     .about h1,

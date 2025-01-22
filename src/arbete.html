@@ -35,18 +35,29 @@
             <h2>Utveckling</h2>
             <p>Denna uppgift har skapats i programmet VS Code och kontinuerligt versionshanterats till
                 GitHub. Arbetet har skett i två branches: main och development. Funktionalitet har inledningsvis skapats
-                i development-branchen och färdiga lösningar har sedan sammanslagits med main-branchen via git merge.
+                i development-branchen och färdiga lösningar har sedan sammanslagits med main-branchen via git merge. Arbetsfilerna har skapats
+                i src-katalogen. 
                 <br><br>
                 Ett antal filer har exkluderats från versionshantering via en .gitignore-fil. "node_modules"-katalogen
                 och de optimerade publiceringsfilerna i
                 "dist"-katalogen är två exempel.
             </p>
-            <h2>Verktyg för automatisering</h2>
+            <h2>Verktyg</h2>
             <p>Uppgiften skapades i NodeJS som ett npm-projekt, inledningsvis med kommandot npm init. För att
                 automatisera delar av utvecklingsarbetet installerades
                 paketet Parcel som en dev dependecy (för att uppfylla krav på möjlighet för återställning via npm
                 install).
                 <br><br>
+                Bilder har inkluderats i jpg-format för att sedan genomgå automatisk konvertering och optimering till AVIF-format via "as"-parametern i kombination med minskad bredd. Denna funktionalitet 
+                har implementerats utefter den officiella dokumentationen för Parcel (<a href="https://parceljs.org/recipes/image/" target="_blank">länk till relevant dokumentationssida</a>) med hjälp
+                av picture-taggen i HTML-koden. 
+                <br><br>
+                För att säkerställa bakåtkompabilitet i webbläsare har "browserlist" inkluderats i package.json, även detta utefter
+                guidning av Parcel-dokumentationen (<a href="https://parceljs.org/features/targets/" target="_blank">länk till relevant dokumentationssida</a>).
+                <br><br>
+                Den färdiga webbplatsen har förberetts för publicering genom att kommandot npm run build (genväg för parcel build) har körts i terminalen.
+                Parcel har då optimerat de kopplade HTML, CSS och JavaScript-filerna och lagt dessa i 
+                "dist"-katalogen för publicering.
             </p>
             <h2>Publicering</h2>
             <p>Publiceringsprocess</p>
