@@ -48,9 +48,9 @@
                 paketet Parcel som en dev dependecy (för att uppfylla krav på möjlighet för återställning via npm
                 install).
                 <br><br>
-                Bilder har inkluderats i jpg-format för att sedan genomgå automatisk konvertering och optimering till AVIF-format via "as"-parametern i kombination med minskad bredd. Denna funktionalitet 
+                Bilder har inkluderats i jpg-format för att sedan genomgå optimering och konvertering till AVIF-format via "as"-parametern i kombination med en minskad bredd på 600. Denna funktionalitet 
                 har implementerats utefter den officiella dokumentationen för Parcel (<a href="https://parceljs.org/recipes/image/" target="_blank">länk till relevant dokumentationssida</a>) med hjälp
-                av picture-taggen i HTML-koden. 
+                av picture-taggen i HTML-koden. En sharp.config.json-fil har skapats som styr kvalitén på filformaten (avif = 50 och jpg = 80).
                 <br><br>
                 För att säkerställa bakåtkompabilitet i webbläsare har "browserlist" inkluderats i package.json, även detta utefter
                 guidning av Parcel-dokumentationen (<a href="https://parceljs.org/features/targets/" target="_blank">länk till relevant dokumentationssida</a>).
@@ -62,7 +62,7 @@
             <h2>Publicering</h2>
             <p>Uppgiften har publicerats på <a href="https://www.netlify.com" target="_blank">Netlify</a> via main-branchen för GitHub-repot.
             På så sätt har automatiserad publicering skett då jag har förgrenat commits från development-branchen till main-branchen via git merge för att sedan
-        skicka dessa till uppgiftens remote repository på GitHub via git push.</p>
+        skicka uppdateringarna till uppgiftens remote repository på GitHub via git push.</p>
         </section>
     </main>
     <footer>
