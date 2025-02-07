@@ -1,3 +1,19 @@
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
 
+/* light color scheme */
+$light-theme-bg: beige;
+$light-theme-text: black;
+$light-theme-primary: brown;
+
+/* dark color scheme */
+$dark-theme-bg: black;
+$dark-theme-text: white;
+$dark-theme-primary: yellow;
+
+@mixin theme($bg, $text, $primary) {
+    background-color: $bg;
+    color: $text;
+    border: $primary;
+}
+
 

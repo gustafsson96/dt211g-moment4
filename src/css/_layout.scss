@@ -1,6 +1,7 @@
 @use "base";
 
 body {
+    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-primary);
     font-family: base.$font-stack;
     margin: 0;
     padding: 0;
@@ -8,3 +9,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.startpage-container {
+    margin: 0 auto;
+    border: 2px solid base.$light-theme-primary;
+    width: 50%;
+}
+
+/* media query for dark theme */
+@media (prefers-color-scheme: dark) {
+    body {
+      @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
+    }
+
+    .startpage-container {
+        border: 2px solid base.$dark-theme-primary;
+    }
+  }
