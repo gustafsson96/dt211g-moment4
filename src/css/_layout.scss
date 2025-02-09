@@ -15,8 +15,8 @@ body {
     justify-content: left;
     align-items: center;
     width: 100%;
-    border-bottom: 2px solid black;
     font-weight: bold;
+    padding-left: 1.5em;
 
     ul {
         display: flex;
@@ -53,7 +53,7 @@ footer {
     line-height: 1.6;
     bottom: 0;
     margin-top: auto;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 
     p {
         text-align: center;
@@ -66,9 +66,9 @@ footer {
         flex-direction: column;
         margin: 0;
         padding: 0.4em 0;
-        border-bottom: 2px solid black;
         justify-content: left;
         align-items: flex-start;
+        border-bottom: none;
 
 
         ul {
@@ -80,6 +80,7 @@ footer {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             justify-content: left;
             align-items: start;
+            border-bottom: 2px solid black;
         }
 
         ul.show {
@@ -104,19 +105,20 @@ footer {
             cursor: pointer;
             margin: 0.5em 0 1em 0;
             align-self: flex-start;
+            margin-left: 1.5em;
         }
 
         .hamburger-icon div {
             width: 25px;
-            height: 3px;
-            border-radius: 20%;
+            height: 4px;
+            border-radius: 25%;
             background-color: #000000;
             transition: transform 0.3s;
         }
 
         /* turn hamburger icon into a cross when opened */
         .hamburger-icon.active div:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
         }
 
         .hamburger-icon.active div:nth-child(2) {
@@ -124,7 +126,7 @@ footer {
         }
 
         .hamburger-icon.active div:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
         }
     }
 
