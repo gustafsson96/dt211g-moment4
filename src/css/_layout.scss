@@ -40,11 +40,25 @@ body {
     border-bottom: 2px solid black;
 }
 
-
+/* specific index.html styling */
 .startpage-container {
     margin: 0 auto;
     border: 2px solid base.$light-theme-border;
     width: 50%;
+}
+
+/* specific pictures.html styling */
+.img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 footer {
