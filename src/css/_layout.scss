@@ -1,7 +1,7 @@
 @use "base";
 
 body {
-    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-primary);
+    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-primary, base.$light-theme-secondary);
     font-family: base.$font-stack;
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ body {
 
 .startpage-container {
     margin: 0 auto;
-    border: 2px solid base.$light-theme-primary;
+    border: 2px solid base.$light-theme-border;
     width: 50%;
 }
 
@@ -53,7 +53,7 @@ footer {
     line-height: 1.6;
     bottom: 0;
     margin-top: auto;
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 
     p {
         text-align: center;
@@ -139,11 +139,11 @@ footer {
 /* media query for dark theme
 @media (prefers-color-scheme: dark) {
     body {
-        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
+        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-primary, base.$dark-theme-secondary);
     }
 
     .navbar {
-        border-bottom: 2px solid base.$dark-theme-primary;
+        border-bottom: 2px solid base.$dark-theme-border;
 
         a,
         .hamburger-icon {
@@ -156,11 +156,11 @@ footer {
     }
 
     .startpage-container {
-        border: 2px solid base.$dark-theme-primary;
+        border: 2px solid base.$dark-theme-border;
     }
 
     footer {
-        border-top: 2px solid base.$dark-theme-primary;
+        border-top: 2px solid base.$dark-theme-border;
     }
 }
 */

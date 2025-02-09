@@ -1,19 +1,31 @@
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
 
 /* light color scheme */
-$light-theme-bg: beige;
-$light-theme-text: black;
-$light-theme-primary: brown;
+$light-theme-bg: #F5E3E0;
+$light-theme-text: #000000;
+$light-theme-border: #6E4555;
+$light-theme-primary: #E8B4BC;
+$light-theme-secondary: lighten(#E8B4BC, 50%);
 
 /* dark color scheme */
-$dark-theme-bg: black;
+$dark-theme-bg: #000000;
 $dark-theme-text: white;
-$dark-theme-primary: yellow;
+$dark-theme-border: yellow;
+$dark-theme-primary: brown;
+$dark-theme-secondary: brown;
 
-@mixin theme($bg, $text, $primary) {
+@mixin theme($bg, $text, $border, $primary, $secondary) {
     background-color: $bg;
     color: $text;
-    border: $primary;
+    border: $border;
+
+    .primary {
+        color: $primary;
+    }
+
+    .secondary {
+        color: $secondary;
+    }
 }
 
 
