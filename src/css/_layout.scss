@@ -133,8 +133,8 @@ footer {
     }
 }
 
-
-/* media query for dark theme */
+/*
+/* media query for dark theme
 @media (prefers-color-scheme: dark) {
     body {
         @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
@@ -161,3 +161,4 @@ footer {
         border-top: 2px solid base.$dark-theme-primary;
     }
 }
+*/
