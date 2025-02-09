@@ -60,18 +60,6 @@ footer {
     }
 }
 
-
-/* media query for dark theme */
-@media (prefers-color-scheme: dark) {
-    body {
-        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
-    }
-
-    .startpage-container {
-        border: 2px solid base.$dark-theme-primary;
-    }
-}
-
 /* media query for screens smaller than 600 px */
 @media (max-width: 600px) {
     .navbar {
@@ -142,5 +130,34 @@ footer {
 
     .active-item {
         border-bottom: none;
+    }
+}
+
+
+/* media query for dark theme */
+@media (prefers-color-scheme: dark) {
+    body {
+        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
+    }
+
+    .navbar {
+        border-bottom: 2px solid base.$dark-theme-primary;
+
+        a,
+        .hamburger-icon {
+            color: base.$dark-theme-text;
+        }
+
+        .hamburger-icon div {
+            background-color: base.$dark-theme-text;
+        }
+    }
+
+    .startpage-container {
+        border: 2px solid base.$dark-theme-primary;
+    }
+
+    footer {
+        border-top: 2px solid base.$dark-theme-primary;
     }
 }
