@@ -64,10 +64,79 @@ footer {
 /* media query for dark theme */
 @media (prefers-color-scheme: dark) {
     body {
-      @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
+        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-primary);
     }
 
     .startpage-container {
         border: 2px solid base.$dark-theme-primary;
     }
-  }
+}
+
+/* media query for screens smaller than 600 px */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+        padding: 0.5em 0;
+        border-bottom: 2px solid black;
+
+        ul {
+            display: none;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        ul.show {
+            display: flex;
+            border: 2px solid black;
+            align-items: left;
+        }
+
+        a {
+            display: inline-block;
+            margin: 1em 1em 1em 2em;
+        }
+
+        a:hover {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    /* hamburger icon */
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        margin: 0.5em 0 1em 0;
+    }
+
+    .hamburger-icon div {
+        width: 25px;
+        height: 3px;
+        border-radius: 20%;
+        background-color: #000000;
+        transition: transform 0.3s;
+    }
+
+    /* turn hamburger icon into a cross when opened */
+    .hamburger-icon.active div:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-icon.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-icon.active div:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .active-item {
+        border-bottom: none;
+    }
+}
