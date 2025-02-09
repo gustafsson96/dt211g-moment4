@@ -16,7 +16,6 @@ body {
     align-items: center;
     width: 100%;
     font-weight: bold;
-    padding-left: 1.5em;
 
     ul {
         display: flex;
@@ -26,6 +25,10 @@ body {
         padding: 0.5em 0;
         justify-content: center;
         align-items: center;
+    }
+
+    li:first-child {
+        padding-left: 1em;
     }
 
     a {
@@ -53,25 +56,28 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 
     img {
         width: 80%;
         height: auto;
-        margin: 0.5em 1em;
-        border-radius: 35px;
+
     }
 }
 
 footer {
-    margin-top: 1em;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     line-height: 1.6;
     bottom: 0;
+    padding: 0;
     margin-top: auto;
-    border-top: 1px solid black;
+    background-color: base.$light-theme-primary;
 
     p {
         text-align: center;
+        margin: 0.7em 0;
+        padding: 0;
     }
 }
 
@@ -100,6 +106,10 @@ footer {
         ul.show {
             display: flex;
             align-items: left;
+        }
+
+        li:first-child {
+            padding-left: 0;
         }
 
         a {
