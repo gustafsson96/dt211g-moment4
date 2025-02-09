@@ -53,11 +53,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
 
     img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: auto;
+        margin: 0.5em 1em;
+        border-radius: 35px;
     }
 }
 
@@ -83,7 +84,6 @@ footer {
         justify-content: left;
         align-items: flex-start;
         border-bottom: none;
-
 
         ul {
             display: none;
@@ -146,6 +146,18 @@ footer {
 
     .active-item {
         border-bottom: none;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 90%;
+            margin: 0.5em;
+            border-radius: 0;
+        }
     }
 }
 
