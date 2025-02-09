@@ -10,11 +10,44 @@ body {
     flex-direction: column;
 }
 
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-family: "Rubik", 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    ul {
+        display: flex;
+        gap: 0 2em;
+        list-style: none;
+        margin: 0.5em 0;
+        padding: 0.5em 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #000;
+    }
+}
+
+.active-item {
+    border-bottom: 2px solid black;
+}
+
+
 .startpage-container {
     margin: 0 auto;
     border: 2px solid base.$light-theme-primary;
     width: 50%;
 }
+
 
 /* media query for dark theme */
 @media (prefers-color-scheme: dark) {

@@ -6,35 +6,6 @@ body {
     flex-direction: column;
 }
 
-/* styling for navigation bar */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid black;
-    font-family: "Rubik", 'Times New Roman', Times, serif;
-    font-weight: bold;
-    background-color: #ffe9ec;
-}
-
-.navbar-items {
-    display: flex;
-    gap: 0 2em;
-    list-style: none;
-    margin: 0.5em 0;
-    padding: 1em 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-items li a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #000;
-}
 
 .active-item {
     border-bottom: 2px solid black;
