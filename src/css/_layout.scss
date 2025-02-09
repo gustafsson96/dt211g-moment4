@@ -47,11 +47,20 @@ body {
 %container {
     display: flex;
     margin: 2em auto 5em;
+    padding: 1em;
     justify-content: center;
 }
 
 /* specific index.html styling */
 .startpage-container {
+    @extend %container;
+    flex-direction: column;
+    border: 2px solid base.$light-theme-border;
+    width: 50%;
+}
+
+/* specifik sass.html styling */
+.sass-container {
     @extend %container;
     flex-direction: column;
     border: 2px solid base.$light-theme-border;
