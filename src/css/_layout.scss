@@ -28,7 +28,7 @@ body {
     }
 
     li:first-child {
-        padding-left: 1em;
+        margin-left: 1.5em;
     }
 
     a {
@@ -43,21 +43,26 @@ body {
     border-bottom: 2px solid black;
 }
 
+/* general container placeholder rules */
+%container {
+    display: flex;
+    margin: 2em auto 5em;
+    justify-content: center;
+}
+
 /* specific index.html styling */
 .startpage-container {
-    margin: 0 auto;
+    @extend %container;
+    flex-direction: column;
     border: 2px solid base.$light-theme-border;
     width: 50%;
 }
 
 /* specific pictures.html styling */
 .img-container {
-    display: flex;
+    @extend %container;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    margin: 0 auto;
 
     img {
         width: 80%;
