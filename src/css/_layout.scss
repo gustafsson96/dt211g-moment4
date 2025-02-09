@@ -47,6 +47,19 @@ body {
     width: 50%;
 }
 
+footer {
+    margin-top: 1em;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    bottom: 0;
+    margin-top: auto;
+    border-top: 1px solid black;
+
+    p {
+        text-align: center;
+    }
+}
+
 
 /* media query for dark theme */
 @media (prefers-color-scheme: dark) {

@@ -7,27 +7,6 @@ body {
 }
 
 
-.active-item {
-    border-bottom: 2px solid black;
-}
-
-/* styling for footer */
-footer {
-    background-color: #ffe9ec;
-    padding: 0.5em;
-    margin-top: 1em;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    bottom: 0;
-    margin-top: auto;
-    
-}
-
-footer p {
-    font-style: italic;
-    text-align: center;
-}
-
 /* styling for index.html */
 
 
