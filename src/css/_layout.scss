@@ -1,7 +1,7 @@
 @use "base";
 
 body {
-    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-primary, base.$light-theme-secondary);
+    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary);
     font-family: base.$font-stack;
     margin: 0;
     padding: 0;
@@ -148,6 +148,10 @@ footer {
         border-bottom: none;
     }
 
+    h1 {
+        font-size: 2.5em;
+    }
+
     .img-container {
         display: flex;
         flex-direction: column;
@@ -165,7 +169,7 @@ footer {
 /* media query for dark theme
 @media (prefers-color-scheme: dark) {
     body {
-        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-primary, base.$dark-theme-secondary);
+        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-heading, base.$dark-theme-primary);
     }
 
     .navbar {

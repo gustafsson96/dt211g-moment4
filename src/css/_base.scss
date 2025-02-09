@@ -1,30 +1,38 @@
+@use "sass:color";  // Import color module
+
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
 
 /* light color scheme */
 $light-theme-bg: #F5E3E0;
 $light-theme-text: #000000;
 $light-theme-border: #6E4555;
-$light-theme-primary: #E8B4BC;
-$light-theme-secondary: pink;
+$light-theme-heading: color.adjust($light-theme-border, $lightness: -15%);
+$light-theme-primary: color.adjust($light-theme-bg, $lightness: -20%);
 
 /* dark color scheme */
 $dark-theme-bg: #000000;
 $dark-theme-text: white;
 $dark-theme-border: yellow;
+$dark-theme-heading: pink;
 $dark-theme-primary: brown;
-$dark-theme-secondary: brown;
 
-@mixin theme($bg, $text, $border, $primary, $secondary) {
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: $light-theme-heading;
+}
+
+@mixin theme($bg, $text, $border, $heading, $primary) {
     background-color: $bg;
     color: $text;
     border: $border;
 
-    .primary {
-        color: $primary;
+    .heading {
+        color: $heading;
     }
 
-    .secondary {
-        color: $secondary;
+    .primary {
+        color: $primary;
     }
 }
 
