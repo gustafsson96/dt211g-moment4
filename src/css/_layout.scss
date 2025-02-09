@@ -77,8 +77,11 @@ footer {
     .navbar {
         flex-direction: column;
         margin: 0;
-        padding: 0.5em 0;
+        padding: 0.4em 0;
         border-bottom: 2px solid black;
+        justify-content: left;
+        align-items: flex-start;
+
 
         ul {
             display: none;
@@ -86,13 +89,13 @@ footer {
             margin: 0;
             padding: 0;
             width: 100%;
-            background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            justify-content: left;
+            align-items: start;
         }
 
         ul.show {
             display: flex;
-            border: 2px solid black;
             align-items: left;
         }
 
@@ -104,36 +107,37 @@ footer {
         a:hover {
             border-bottom: 2px solid black;
         }
-    }
 
-    /* hamburger icon */
-    .hamburger-icon {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        margin: 0.5em 0 1em 0;
-    }
+        /* hamburger icon */
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            margin: 0.5em 0 1em 0;
+            align-self: flex-start;
+        }
 
-    .hamburger-icon div {
-        width: 25px;
-        height: 3px;
-        border-radius: 20%;
-        background-color: #000000;
-        transition: transform 0.3s;
-    }
+        .hamburger-icon div {
+            width: 25px;
+            height: 3px;
+            border-radius: 20%;
+            background-color: #000000;
+            transition: transform 0.3s;
+        }
 
-    /* turn hamburger icon into a cross when opened */
-    .hamburger-icon.active div:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
+        /* turn hamburger icon into a cross when opened */
+        .hamburger-icon.active div:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
 
-    .hamburger-icon.active div:nth-child(2) {
-        opacity: 0;
-    }
+        .hamburger-icon.active div:nth-child(2) {
+            opacity: 0;
+        }
 
-    .hamburger-icon.active div:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        .hamburger-icon.active div:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
     }
 
     .active-item {
