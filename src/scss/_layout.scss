@@ -45,33 +45,38 @@ body {
 }
 
 /* general container placeholder rules */
-%container {
+%main-container {
+    @extend %wavy-top-btm;
     display: flex;
     margin: 2em auto 5em;
-    padding: 2em;
+    padding: 5em 0;
     line-height: 2em;
+    background-color: base.$light-theme-secondary;
+}
+
+%text-box-container {
+    margin: 0 auto;
+    padding: 4em 3em;
+    width: 50%;
 }
 
 /* specific index.html styling */
 .startpage-container {
-    @extend %container;
+    @extend %main-container;
     flex-direction: column;
-    border: 2px solid base.$light-theme-border;
-    width: 50%;
+
+    div {
+        @extend %text-box-container;
+    }
 }
 
 /* specifik sass.html styling */
 .sass-container {
-    @extend %container;
-    @extend %wavy-top-btm;
+    @extend %main-container;
     flex-direction: column;
-    padding: 5em 0;
-    background-color: base.$light-theme-secondary;
 
     div {
-        margin: 0 auto;
-        padding: 4em 3em;
-        width: 50%;
+        @extend %text-box-container;
     }
 
     .question {
@@ -89,14 +94,16 @@ body {
 
 /* specific pictures.html styling */
 .img-container {
-    @extend %container;
+    @extend %main-container;
     flex-direction: row;
     text-align: center;
     justify-content: center;
 
     img {
-        width: 80%;
+        width: 90%;
         height: auto;
+        border-radius: 25px;
+        margin: 5em 0;
 
     }
 }
@@ -209,11 +216,14 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 1em 0;
+        background-color: base.$light-theme-bg;
+        --mask: none;
 
         img {
-            width: 90%;
-            margin: 0.5em;
+            width: 95%;
             border-radius: 0;
+            margin: 1em 0;
         }
     }
 }
