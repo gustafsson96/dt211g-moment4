@@ -14,9 +14,9 @@ $light-theme-secondary: color.adjust($light-theme-border, $lightness: 50%);
 $dark-theme-bg: #000000;
 $dark-theme-text: #ffffff;
 $dark-theme-border: #8E4585;
-$dark-theme-heading: color.adjust($dark-theme-border, $lightness: 40%);
+$dark-theme-heading: color.adjust($dark-theme-border, $lightness: 47%);
 $dark-theme-primary: color.adjust($dark-theme-bg, $lightness: 10%);
-$dark-theme-secondary: color.adjust($dark-theme-border, $lightness: -32%);
+$dark-theme-secondary: color.adjust($dark-theme-border, $lightness: -35%);
 
 h1 {
     text-align: center;

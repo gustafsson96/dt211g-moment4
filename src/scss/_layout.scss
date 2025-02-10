@@ -78,6 +78,10 @@ body {
         color: #000;
     }
 
+    a:hover {
+        text-decoration: underline;
+    }
+
     .active-item {
         text-decoration: underline;
     }
@@ -123,9 +127,9 @@ footer {
     }
 
     .question {
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding: 1em 0 0 0;
-        margin-bottom: 0;
+        margin-bottom: 0.5em;
         font-weight: bold;
     }
 
@@ -248,6 +252,7 @@ footer {
     }
 }
 
+
 /* media query for dark theme */
 @media (prefers-color-scheme: dark) {
     body {
@@ -255,7 +260,6 @@ footer {
     }
 
     .navbar {
- 
         a,
         .hamburger-icon {
             color: base.$dark-theme-text;
