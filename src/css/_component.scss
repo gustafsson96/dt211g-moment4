@@ -17,10 +17,10 @@
 /* wavy border from https://css-generators.com/wavy-shapes/ */
 %wavy-top-btm {
     --mask:
-    radial-gradient(78.1px at 50% 110px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 51% repeat-x,
-    radial-gradient(78.1px at 50% -60px,#0000 99%,#000 101%) 50% 50px/200px calc(51% - 50px) repeat-x,
-    radial-gradient(78.1px at 50% calc(100% - 110px),#000 99%,#0000 101%) calc(50% - 100px) 100%/200px 51% repeat-x,
-    radial-gradient(78.1px at 50% calc(100% + 60px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px calc(51% - 50px) repeat-x;
+    radial-gradient(120.93px at 50% 165px,#000 99%,#0000 101%) calc(50% - 120px) 0/240px 51% repeat-x,
+    radial-gradient(120.93px at 50% -105px,#0000 99%,#000 101%) 50% 60px/240px calc(51% - 60px) repeat-x,
+    radial-gradient(120.93px at 50% calc(100% - 165px),#000 99%,#0000 101%) calc(50% - 120px) 100%/240px 51% repeat-x,
+    radial-gradient(120.93px at 50% calc(100% + 105px),#0000 99%,#000 101%) 50% calc(100% - 60px)/240px calc(51% - 60px) repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
