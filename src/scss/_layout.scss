@@ -168,6 +168,10 @@ footer {
             align-items: left;
         }
 
+        li:first-child {
+            margin-left: 0;
+        }
+
         a {
             display: inline-block;
             margin: 1em 1em 1em 2em;
