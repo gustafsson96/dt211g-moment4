@@ -1,4 +1,4 @@
-@use "sass:color"; // Import color module
+@use "sass:color";
 
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
 
@@ -30,6 +30,7 @@ h2 {
     color: $light-theme-heading;
 }
 
+/* mixin for color schemes */
 @mixin theme($bg, $text, $border, $heading, $primary, $secondary) {
     background-color: $bg;
     color: $text;
