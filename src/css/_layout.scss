@@ -1,4 +1,5 @@
 @use "base";
+@use "component";
 
 body {
     @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary);
@@ -47,8 +48,7 @@ body {
 %container {
     display: flex;
     margin: 2em auto 5em;
-    padding: 1em;
-    justify-content: center;
+    padding: 2em;
 }
 
 /* specific index.html styling */
@@ -62,9 +62,16 @@ body {
 /* specifik sass.html styling */
 .sass-container {
     @extend %container;
+    @extend %wavy-border;
     flex-direction: column;
-    border: 2px solid base.$light-theme-border;
+    border-radius: 30px;
     width: 50%;
+    padding: 1em;
+    background-color: base.$light-theme-secondary;
+
+    p {
+        padding: 3em;
+    }
 }
 
 /* specific pictures.html styling */
@@ -72,6 +79,7 @@ body {
     @extend %container;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
 
     img {
         width: 80%;

@@ -8,6 +8,7 @@ $light-theme-text: #000000;
 $light-theme-border: #6E4555;
 $light-theme-heading: color.adjust($light-theme-border, $lightness: -15%);
 $light-theme-primary: color.adjust($light-theme-bg, $lightness: -15%);
+$light-theme-secondary: color.adjust($light-theme-border, $lightness: 50%);
 
 /* dark color scheme */
 $dark-theme-bg: #000000;
