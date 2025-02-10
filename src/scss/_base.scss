@@ -12,10 +12,11 @@ $light-theme-secondary: color.adjust($light-theme-border, $lightness: 50%);
 
 /* dark color scheme */
 $dark-theme-bg: #000000;
-$dark-theme-text: white;
+$dark-theme-text: #ffffff;
 $dark-theme-border: yellow;
 $dark-theme-heading: pink;
-$dark-theme-primary: brown;
+$dark-theme-primary: color.adjust($dark-theme-bg, $lightness: -15%);
+$dark-theme-secondary: color.adjust($dark-theme-border, $lightness: -40%);
 
 h1 {
     text-align: center;
@@ -29,10 +30,10 @@ h2 {
     color: $light-theme-heading;
 }
 
-@mixin theme($bg, $text, $border, $heading, $primary) {
+@mixin theme($bg, $text, $border, $heading, $primary, $secondary) {
     background-color: $bg;
     color: $text;
-    border: $border;
+    border-color: $border;
 
     .heading {
         color: $heading;
@@ -40,6 +41,17 @@ h2 {
 
     .primary {
         color: $primary;
+    }
+
+    .secondary {
+        color: $secondary;
+    }
+
+    a {
+        color: $primary;
+        &:hover {
+            color: $heading;
+        }
     }
 }
 

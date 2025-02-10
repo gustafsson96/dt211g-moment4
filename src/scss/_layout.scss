@@ -40,7 +40,7 @@ $rounded: true;
 
 /* general body styling */
 body {
-    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary);
+    @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary, base.$light-theme-secondary);
     font-family: base.$font-stack;
     margin: 0;
     padding: 0;
@@ -261,11 +261,10 @@ footer {
     }
 }
 
-/*
-/* media query for dark theme
+/* media query for dark theme */
 @media (prefers-color-scheme: dark) {
     body {
-        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-heading, base.$dark-theme-primary);
+        @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-heading, base.$dark-theme-primary, base.$dark-theme-secondary);
     }
 
     .navbar {
@@ -281,6 +280,10 @@ footer {
         }
     }
 
+    %main-container {
+        background-color: base.$dark-theme-secondary;
+    }
+
     .startpage-container {
         border: 2px solid base.$dark-theme-border;
     }
@@ -289,4 +292,3 @@ footer {
         border-top: 2px solid base.$dark-theme-border;
     }
 }
-*/
