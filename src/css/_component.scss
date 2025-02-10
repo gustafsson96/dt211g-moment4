@@ -14,19 +14,13 @@
     text-align: center;
 }
 
-/* wavy border from https://css-shape.com/wavy-box/ */
-%wavy-border {
-    --s: 30px;  /* control the size of the wave */
-    
-    width: round(var(--w),4*var(--s)); 
-    aspect-ratio: 1;
-    padding: var(--s);
-    border: var(--s) solid #0000;
-    box-sizing: border-box;
-    mask: 
-      radial-gradient(calc(sqrt(2)*var(--s)),#000 calc(100% - 1px),#0000),
-      conic-gradient(#000 0 0) content-box,
-      radial-gradient(calc(sqrt(2)*var(--s)),#0000 100%,#000 calc(100% + 1px)) 
-       var(--s) var(--s) padding-box;
-    mask-size: calc(var(--s)*4) calc(var(--s)*4);
-  }
+/* wavy border from https://css-generators.com/wavy-shapes/ */
+%wavy-top-btm {
+    --mask:
+    radial-gradient(78.1px at 50% 110px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 51% repeat-x,
+    radial-gradient(78.1px at 50% -60px,#0000 99%,#000 101%) 50% 50px/200px calc(51% - 50px) repeat-x,
+    radial-gradient(78.1px at 50% calc(100% - 110px),#000 99%,#0000 101%) calc(50% - 100px) 100%/200px 51% repeat-x,
+    radial-gradient(78.1px at 50% calc(100% + 60px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px calc(51% - 50px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
