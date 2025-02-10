@@ -69,11 +69,12 @@ body {
 
     div {
         margin: 0 auto;
-        max-width: 50%;
+        padding: 4em 3em;
+        width: 50%;
     }
 
     p {
-        padding: 3em;
+        font-size: 1.2em
     }
 }
 
@@ -185,6 +186,14 @@ footer {
 
     h1 {
         font-size: 2.5em;
+    }
+
+    .sass-container {
+
+        div {
+            padding: 4em 0;
+            width: 90%;
+        }
     }
 
     .img-container {
