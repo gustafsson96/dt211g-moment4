@@ -23,6 +23,12 @@ h1 {
     color: $light-theme-heading;
 }
 
+h2 {
+    font-size: 1.7em;
+    margin-bottom: 0.4em;
+    color: $light-theme-heading;
+}
+
 @mixin theme($bg, $text, $border, $heading, $primary) {
     background-color: $bg;
     color: $text;
