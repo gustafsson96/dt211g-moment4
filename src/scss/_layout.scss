@@ -183,7 +183,7 @@ footer {
 
         ul.show {
             display: flex;
-            align-items: left;
+            align-items: start;
         }
 
         li:first-child {
@@ -241,6 +241,10 @@ footer {
         div {
             padding: 4em 0;
             width: 90%;
+        }
+
+        .question {
+            font-size: 1.2em;
         }
     }
 
