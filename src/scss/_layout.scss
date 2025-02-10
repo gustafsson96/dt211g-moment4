@@ -25,7 +25,7 @@ $rounded: true;
         border-radius: 25px;
         width: 90%;
         height: auto;
-        margin: $margin-top $margin-bottom;
+        margin: $margin-top auto $margin-bottom;
 
         @media (max-width: 600px) {
             border-radius: 0;
@@ -149,7 +149,6 @@ footer {
         padding: 0.4em 0;
         justify-content: left;
         align-items: flex-start;
-        border-bottom: none;
 
         ul {
             display: none;
@@ -160,7 +159,6 @@ footer {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             justify-content: left;
             align-items: start;
-            border-bottom: 2px solid black;
         }
 
         ul.show {
