@@ -1,4 +1,4 @@
-@use "sass:color";  // Import color module
+@use "sass:color"; // Import color module
 
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
 
@@ -13,10 +13,10 @@ $light-theme-secondary: color.adjust($light-theme-border, $lightness: 50%);
 /* dark color scheme */
 $dark-theme-bg: #000000;
 $dark-theme-text: #ffffff;
-$dark-theme-border: yellow;
-$dark-theme-heading: pink;
-$dark-theme-primary: color.adjust($dark-theme-bg, $lightness: -15%);
-$dark-theme-secondary: color.adjust($dark-theme-border, $lightness: -40%);
+$dark-theme-border: #8E4585;
+$dark-theme-heading: color.adjust($dark-theme-border, $lightness: 40%);
+$dark-theme-primary: color.adjust($dark-theme-bg, $lightness: 10%);
+$dark-theme-secondary: color.adjust($dark-theme-border, $lightness: -32%);
 
 h1 {
     text-align: center;
@@ -35,7 +35,8 @@ h2 {
     color: $text;
     border-color: $border;
 
-    .heading {
+    h1,
+    h2 {
         color: $heading;
     }
 
@@ -47,12 +48,7 @@ h2 {
         color: $secondary;
     }
 
-    a {
-        color: $primary;
-        &:hover {
-            color: $heading;
-        }
+    footer {
+        background-color: $primary
     }
 }
-
-
