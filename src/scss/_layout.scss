@@ -14,10 +14,10 @@
 %text-box-container {
     margin: 0 auto;
     padding: 4em 3em;
-    width: 50%;
+    width: 45%;
 }
 
-/* Mixin with if/else statement for responsive image styling */
+/* mixin with if/else statement for responsive image styling */
 $rounded: true;
 
 @mixin responsive-image-styling ($margin-top: 5em, $margin-bottom: 5em) {
@@ -33,12 +33,12 @@ $rounded: true;
             margin: 1em 0;
         }
     }
-
     @else {
-        border-radius: 0; // Set sharp corners as default if rounded is false or not set
+        border-radius: 0; // set sharp corners as default if rounded is false or not set
     }
 }
 
+/* general body styling */
 body {
     @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary);
     font-family: base.$font-stack;
@@ -49,6 +49,7 @@ body {
     flex-direction: column;
 }
 
+/* navigation bar styling */
 .navbar {
     display: flex;
     justify-content: left;
@@ -80,6 +81,22 @@ body {
 
 .active-item {
     border-bottom: 2px solid black;
+}
+
+/* footer styling */
+footer {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    bottom: 0;
+    padding: 0;
+    margin-top: auto;
+    background-color: base.$light-theme-primary;
+
+    p {
+        text-align: center;
+        margin: 0.7em 0;
+        padding: 0;
+    }
 }
 
 /* specific index.html styling */
@@ -126,18 +143,14 @@ body {
     }
 }
 
-footer {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    bottom: 0;
-    padding: 0;
-    margin-top: auto;
-    background-color: base.$light-theme-primary;
+/* media query for screens larger than 1600 px */
+@media (min-width: 1600px) {
 
-    p {
-        text-align: center;
-        margin: 0.7em 0;
-        padding: 0;
+    .startpage-container,
+    .sass-container {
+        div {
+            max-width: 900px;
+        }
     }
 }
 
