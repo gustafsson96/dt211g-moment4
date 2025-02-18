@@ -1,3 +1,23 @@
-@keyframes identifier {
-    
+@keyframes moveStar {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin: 0 auto;
+    }
+    100% { 
+        margin-left: auto;
+        align-self: flex-end;
+    } 
+}
+
+.star-image-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+
+    .star-img {
+        border: 2px solid yellow;
+        animation: moveStar 3s linear infinite alternate;
+    }
 }
