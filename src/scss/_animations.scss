@@ -34,39 +34,3 @@
         transform: translate(-30px);
     }
 }
-
-.guy-img-container {
-    display: flex;
-    flex-direction: column;
-
-    .guy-img {
-        animation: moveGuy 10s ease-in-out infinite alternate;
-        margin: 7em 0;
-    }
-
-    .row-guys {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .guy-img-2 {
-        animation: spinGuy 2s linear infinite normal;
-        margin: 0 0 7em 0;
-        text-align: center;
-    }
-
-    .guy-img-3 {
-        animation: spinGuy 4s linear infinite normal;
-        margin: 0 0 7em 0;
-        text-align: center;
-    }
-
-    .guy-img-4 {
-        margin: 0 0 7em 0;
-        text-align: end;
-        position: absolute;
-        right: 0;
-        animation: jumpGuy 1s ease-in-out infinite;
-    }
-}
