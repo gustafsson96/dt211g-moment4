@@ -89,6 +89,10 @@ body {
 }
 
 /* animations.html styling */
+.party-btn {
+    @extend %btn;
+}
+
 .guy-img-container {
     display: flex;
     flex-direction: column;
