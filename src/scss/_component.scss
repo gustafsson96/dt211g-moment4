@@ -1,4 +1,5 @@
 @use "base";
+@use "animations";
 
 /* placeholder button to use for future projects */
 %btn {
@@ -18,6 +19,10 @@
     @media (prefers-color-scheme: dark) {
         @include base.theme(base.$dark-theme-bg, base.$dark-theme-text, base.$dark-theme-border, base.$dark-theme-heading, base.$dark-theme-primary, base.$dark-theme-secondary);
     }
+}
+
+.party-started {
+    animation: partyBg 3s linear infinite;
 }
 
 /* wavy border from https://css-generators.com/wavy-shapes/ */

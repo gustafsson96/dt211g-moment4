@@ -11,3 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburgerIcon.classList.toggle('active');
     });
 });
+
+const partyBtn = document.querySelector('.party-btn');
+
+partyBtn.addEventListener('click', function() {
+    const partyContainerEl = document.querySelector('.guy-img-container')
+    partyContainerEl.classList.toggle('party-started');
+});
