@@ -7,12 +7,27 @@
     } 
 }
 
+@keyframes spinGuy {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .guy-img-container {
     border: 2px solid red;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     .guy-img {
         animation: moveGuy 5s ease-in-out infinite alternate;
+        margin-bottom: 7em;
+    }
+
+    .guy-img-2 {
+        animation: spinGuy 5s linear infinite;
+        border: 2px soild yellow;
     }
 }
