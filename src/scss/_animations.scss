@@ -2,21 +2,33 @@
     0% {
         margin-left: 0;
     }
+
     50% {
-        margin-left: 75%;
+        margin-left: 50%;
     }
+
     100% {
         margin-left: 0;
     }
 }
 
 @keyframes spinGuy {
-    from {
+    0% {
         transform: rotateY(0deg);
     }
 
-    to {
+    100% {
         transform: rotateY(360deg);
+    }
+}
+
+@keyframes jumpGuy {
+    0%, 100% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-30px);
     }
 }
 
@@ -30,8 +42,30 @@
         margin: 7em 0;
     }
 
+    .row-guys {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid green;
+        position: relative;
+    }
+
     .guy-img-2 {
-        animation: spinGuy 6s linear infinite;
+        animation: spinGuy 2s linear infinite normal;
         margin: 0 0 7em 0;
+        text-align: center;
+    }
+
+    .guy-img-3 {
+        animation: spinGuy 4s linear infinite normal;
+        margin: 0 0 7em 0;
+        text-align: center;
+    }
+
+    .guy-img-4 {
+        margin: 0 0 7em 0;
+        text-align: end;
+        position: absolute;
+        right: 0;
+        animation: jumpGuy 1s ease-in-out infinite;
     }
 }
