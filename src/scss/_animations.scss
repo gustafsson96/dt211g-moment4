@@ -2,15 +2,19 @@
     0% {
         margin-left: 0;
     }
-    100% { 
+    50% {
         margin-left: 75%;
-    } 
+    }
+    100% {
+        margin-left: 0;
+    }
 }
 
 @keyframes spinGuy {
     from {
         transform: rotateY(0deg);
     }
+
     to {
         transform: rotateY(360deg);
     }
@@ -22,12 +26,12 @@
     flex-direction: column;
 
     .guy-img {
-        animation: moveGuy 5s ease-in-out infinite alternate;
-        margin-bottom: 7em;
+        animation: moveGuy 10s ease-in-out infinite alternate;
+        margin: 7em 0;
     }
 
     .guy-img-2 {
-        animation: spinGuy 5s linear infinite;
-        border: 2px soild yellow;
+        animation: spinGuy 6s linear infinite;
+        margin: 0 0 7em 0;
     }
 }
