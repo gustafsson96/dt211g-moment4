@@ -25,6 +25,10 @@
     animation: partyBg 3s linear infinite;
 }
 
+.run-animation {
+    animation-play-state: running !important;
+}
+
 /* wavy border from https://css-generators.com/wavy-shapes/ */
 %wavy-top-btm {
     --mask:
