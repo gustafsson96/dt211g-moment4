@@ -89,9 +89,15 @@ body {
 }
 
 /* specific animations.html styling */
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .party-btn {
     @extend %btn;
-    
     transition-property: background-color;
     transition-duration: 1s;
 }
