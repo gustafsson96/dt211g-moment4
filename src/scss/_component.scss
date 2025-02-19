@@ -11,7 +11,6 @@
     border: 2px solid;
     color: inherit;
     background-color: #fff;
-    cursor: pointer;
     text-align: center;
 
     @include base.theme(base.$light-theme-bg, base.$light-theme-text, base.$light-theme-border, base.$light-theme-heading, base.$light-theme-primary, base.$light-theme-secondary);

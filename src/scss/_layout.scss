@@ -88,9 +88,16 @@ body {
     }
 }
 
-/* animations.html styling */
+/* specific animations.html styling */
 .party-btn {
     @extend %btn;
+    
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.party-btn:hover {
+    background-color:#301934;
 }
 
 .guy-img-container {
@@ -126,21 +133,6 @@ body {
         position: absolute;
         right: 0;
         animation: jumpGuy 1s ease-in-out infinite;
-    }
-}
-
-/* footer styling */
-footer {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    bottom: 0;
-    padding: 0;
-    margin-top: auto;
-
-    p {
-        text-align: center;
-        margin: 0.7em 0;
-        padding: 0;
     }
 }
 
@@ -190,6 +182,21 @@ footer {
 
     img {
         @include responsive-image-styling;
+    }
+}
+
+/* footer styling */
+footer {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    bottom: 0;
+    padding: 0;
+    margin-top: auto;
+
+    p {
+        text-align: center;
+        margin: 0.7em 0;
+        padding: 0;
     }
 }
 
