@@ -2,12 +2,8 @@
     0% {
         margin-left: 0;
     }
-    50% {
-        margin: 0 auto;
-    }
     100% { 
-        margin-left: auto;
-        align-self: flex-end;
+        margin-left: 75%;
     } 
 }
 
@@ -18,6 +14,6 @@
 
     .star-img {
         border: 2px solid yellow;
-        animation: moveStar 3s linear infinite alternate;
+        animation: moveStar 5s ease-in-out infinite alternate;
     }
 }
