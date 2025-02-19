@@ -1,3 +1,6 @@
+@use "base";
+@use "component";
+
 @keyframes moveGuy {
     0% {
         margin-left: 0;
@@ -33,7 +36,6 @@
 }
 
 .guy-img-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
 
@@ -45,7 +47,6 @@
     .row-guys {
         display: flex;
         flex-direction: row;
-        border: 2px solid green;
         position: relative;
     }
 
