@@ -1,3 +1,4 @@
+/* animation for stick guy to move side to side */
 @keyframes moveGuy {
     0% {
         margin-left: 0;
@@ -12,6 +13,7 @@
     }
 }
 
+/* animation for stick guys to rotate */
 @keyframes spinGuy {
     0% {
         transform: rotateY(0deg);
@@ -22,6 +24,7 @@
     }
 }
 
+/* animation for stick guy move side to side faster */
 @keyframes jumpGuy {
     0%, 100% {
         transform: translate(0);
@@ -32,6 +35,7 @@
     }
 }
 
+/* animation to change background on party mode */
 @keyframes partyBg {
     0% {
         background-color: #FFFFC5;

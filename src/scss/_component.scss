@@ -1,7 +1,7 @@
 @use "base";
 @use "animations";
 
-/* placeholder button to use for future projects */
+/* placeholder button */
 %btn {
     text-decoration: none;
     font-size: 1.3em;
@@ -21,6 +21,7 @@
     }
 }
 
+/* classes when party btn is clicked */
 .party-started {
     animation: partyBg 3s linear infinite;
 }
