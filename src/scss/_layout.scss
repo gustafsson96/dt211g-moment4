@@ -98,12 +98,13 @@ body {
 
 .party-btn {
     @extend %btn;
-    transition-property: background-color;
+    transition-property: background-color, color;
     transition-duration: 1s;
 }
 
 .party-btn:hover {
     background-color:#301934;
+    color: #ea2de3;
 }
 
 .guy-img-container {
